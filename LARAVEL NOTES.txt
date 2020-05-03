@@ -1,0 +1,81 @@
+search mo sa cmd yung composer para malaman mo kung gumagana
+cmd
+mkdir = make a folder
+cd.. = back to previous file
+cd(directory) = go to next file
+composer create-project laravel/laravel --prefer-dist (for installation)
+http://localhost/laravelone/laravel/public/ = to check if guamagana yung laravel 
+php artisan (directory = kumabaga siya yung ginagamit to type other syntax
+cls to delete previous commands
+
+composer create-project laravel/laravel --prefer-dist laravel_two(folder name) 
+(for creating new project, it involves the packages needed)
+
+make:controller sa cmd to cr8 a controller
+syntax is php artisan make:controller AccountController
+
+php artisan make:controller StoryController --resource 
+(kasama na yung mga method na pang add delete pag may resource)
+
+VIEWS
+folder needed are resource and views
+
+PUBLIC
+holds css and js bootstrap etc
+
+to pass data
+you can use array or with or  compact
+plural sa model animals
+singular sa table animal
+
+php artisan make:model Idea --migration
+
+images or uploads dapat nasa public
+
+----------------------------------------------------------
+Migration
+php artisan make:migration create_items_table --table="items"
+php artisan migrate:reset
+php artisan migrate:rollback
+
+take note security
+email verification
+if not yari ka kay ntc
+
+<!-- @csrf = creates token id -->
+NOW() para makuwa time pinasa
+
+----------------------------------
+gumagawa ng dummy records
+factory (auto-generated)
+seed (add/custom)
+
+CREATING SEEDER
+php artisan make:seed MoviesTableSeeder
+php artisan migrate:refresh --seed
+
+CREATING FACTORY
+php artisan make:factory MovieFactory
+
+php artisan down = para ma down yung page
+php artisan up = para ma up yung page
+
+MIDDLE WARE
+parang security siya to check like a middle man 
+php artisan make:middlware SampleMiddleWare
+
+TO CREATE LOGIN
+composer require laravel/ui --dev (log in create automatic pag ka install ng project)
+php artisan ui vue --auth 
+
+_-------------------------------
+SESSIONS
+
+
+gagamit kalng ng post pag galing form
+
+______________________________________
+soft delete means pag nagbura nas adatabse padin
+
+php artisan make:migration add_deleted_at_column_to_items --table items
+// pag mag add ka ng column sa mga na migrate na
